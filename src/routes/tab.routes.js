@@ -4,6 +4,8 @@ import Inicial from '../pages/InicialPages/Inicial/Inicial';
 import AdicionarCultura from '../pages/AgricultorPages/AdicionarCulturaPage/AdicionarCultura';
 import Salvos from '../pages/SalvosPages/Salvos/Salvos';
 import Cultura from '../pages/AgricultorPages/CulturaPage/Cultura';
+import PraticaPage from '../pages/AgricultorPages/PraticaPage/PraticaPage';
+
 
 const Tab = createBottomTabNavigator();
 
@@ -20,7 +22,7 @@ export default function TabRoutes(){
             />
              <Tab.Screen 
             name='adicionarcultura'
-            component={Cultura} //antes era AdicionarCultura
+            component={AdicionarCultura} 
             options={{
                 tabBarIcon: ({ size }) => <Feather name='plus' size={size} />,
                 tabBarLabel: 'Nova Cultura'
