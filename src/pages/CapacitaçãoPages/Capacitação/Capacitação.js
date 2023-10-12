@@ -4,19 +4,12 @@ import Bottom from "../../../components/BottomComponent/bottom";
 export default function Capacitação({ navigation }) {
     return (
         <>
-        <View>
+        <View style={{alignItems:"center"}}>
             <Text>
                 Capacitação
             </Text>
-            <Button title="Área do Agricultor" onPress={() => navigation.navigate('Agricu')} />
-
-
-            <Button title="Informatilhos" onPress={() => navigation.navigate('Noticias')} />
-
-
-            <Button title="Capacitação" onPress={() => navigation.navigate('Capacitação')} />
         </View>
-        <Bottom navigation={navigation}/>
+        <Bottom  navigation={navigation}/>
         </>
     )
 }

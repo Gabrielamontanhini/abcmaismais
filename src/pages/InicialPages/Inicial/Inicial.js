@@ -1,22 +1,24 @@
 import { BigHeader } from "../../../components/HeadersComponents/BigHeader";
 import { StyledSafeArea } from "../../../styles/styledSafeArea";
 import { Card } from "../../../components/CardComponent/Card";
-import { OptionsView } from "../../../styles/styledOptions";
 import Bottom from "../../../components/BottomComponent/bottom";
+import { TouchableOpacity } from "react-native";
 
 
-export default function Inicial({navigation}) {
- 
-
+export default function Inicial({ navigation }) {
     return (
         <StyledSafeArea>
             <BigHeader />
-            <OptionsView>
-                <Card data={{ label: 'Área do Agricultor' }} />
-                <Card data={{ label: 'Notícias' }} />
-                <Card data={{ label: 'Capacitação' }} />
-            </OptionsView>
-         <Bottom navigation={navigation}/>
+                <TouchableOpacity onPress={()=>navigation.navigate('areadoagricultor')}>
+                    <Card  data={{ label: 'Área do Agricultor' }} />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigation.navigate('noticias')}>
+                    <Card data={{ label: 'Notícias' }} />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigation.navigate('capacitação')}>
+                    <Card data={{ label: 'Capacitação' }} />
+                </TouchableOpacity>
+            <Bottom navigation={navigation} />
         </StyledSafeArea>
     )
 }

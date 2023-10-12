@@ -8,6 +8,7 @@ import FeedNoticias from '../pages/NoticiasPages/FeedNoticias/Noticia';
 import Capacitação from '../pages/CapacitaçãoPages/Capacitação/Capacitação';
 import Forum from '../pages/ForumPages/Forum';
 import Inicial from '../pages/InicialPages/Inicial/Inicial';
+import { AreaDoAgricultorStack } from './stackRoutes/AgricultorStack';
 
 const Drawer = createDrawerNavigator();
 
@@ -24,7 +25,7 @@ export default function DrawerRoutes(){
             />
              <Drawer.Screen 
             name='areadoagricultor'
-            component={Agricultor}
+            component={AreaDoAgricultorStack}
             options={{
                 drawerIcon: ({size}) => <Feather name='user' size={size}/>,
                 drawerLabel: 'Área do Agricultor'
@@ -46,7 +47,7 @@ export default function DrawerRoutes(){
                 drawerLabel: 'Capacitação'
             }}
             />
-               <Drawer.Screen 
+            <Drawer.Screen 
             name='forum'
             component={Forum}
             options={{

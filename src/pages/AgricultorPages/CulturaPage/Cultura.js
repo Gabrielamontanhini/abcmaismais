@@ -3,8 +3,8 @@ import { TinyHeader } from "../../../components/HeadersComponents/TinyHeader";
 import { OptionsView } from "../../../styles/styledOptions";
 import { StyledSafeArea } from "../../../styles/styledSafeArea";
 import Pratica from "../../../components/PraticaComponent/Pratica";
-
-export default function Cultura() {
+import Bottom from "../../../components/BottomComponent/bottom";
+export default function Cultura({navigation}) {
     const culturaEscolhida = [
         {
             id: 1,
@@ -44,6 +44,7 @@ export default function Cultura() {
                     )}
                 />
             </OptionsView>
+        <Bottom navigation={navigation} />
         </StyledSafeArea>
     )
 }
