@@ -1,7 +1,5 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
-import TabRoutes from './tab.routes';
 import Inicial from '../pages/InicialPages/Inicial/Inicial';
 import Agricultor from '../pages/AgricultorPages/AgricultorInicialPage/Agricultor';
 
@@ -12,7 +10,7 @@ export default function StackRoutes(){
         <Stack.Navigator>
             <Stack.Screen 
             name='inicial'
-            component={TabRoutes}/>
+            component={Inicial}/>
             <Stack.Screen 
             name='areadoagricultorstack'
             component={Agricultor}/>

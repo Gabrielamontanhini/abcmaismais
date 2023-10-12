@@ -1,7 +1,9 @@
 import { Button, Text, View } from "react-native";
+import Bottom from "../../../components/BottomComponent/bottom";
 
 export default function Capacitação({ navigation }) {
     return (
+        <>
         <View>
             <Text>
                 Capacitação
@@ -14,5 +16,7 @@ export default function Capacitação({ navigation }) {
 
             <Button title="Capacitação" onPress={() => navigation.navigate('Capacitação')} />
         </View>
+        <Bottom navigation={navigation}/>
+        </>
     )
 }

@@ -1,12 +1,12 @@
-import { Button } from "react-native";
 import { BigHeader } from "../../../components/HeadersComponents/BigHeader";
 import { StyledSafeArea } from "../../../styles/styledSafeArea";
 import { Card } from "../../../components/CardComponent/Card";
 import { OptionsView } from "../../../styles/styledOptions";
+import Bottom from "../../../components/BottomComponent/bottom";
 
 
-export default function Inicial() {
-
+export default function Inicial({navigation}) {
+ 
 
     return (
         <StyledSafeArea>
@@ -16,7 +16,7 @@ export default function Inicial() {
                 <Card data={{ label: 'Notícias' }} />
                 <Card data={{ label: 'Capacitação' }} />
             </OptionsView>
-           
+         <Bottom navigation={navigation}/>
         </StyledSafeArea>
     )
 }

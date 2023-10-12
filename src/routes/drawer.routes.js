@@ -3,13 +3,11 @@ import { Feather } from '@expo/vector-icons'
 import { Octicons } from '@expo/vector-icons'; 
 import { FontAwesome5 } from '@expo/vector-icons'; 
 import { Entypo } from '@expo/vector-icons'; 
-import TabRoutes from './tab.routes'
-import StackRoutes from './stack.routes';
 import Agricultor from '../pages/AgricultorPages/AgricultorInicialPage/Agricultor';
-import Salvos from '../pages/SalvosPages/Salvos/Salvos';
 import FeedNoticias from '../pages/NoticiasPages/FeedNoticias/Noticia';
 import Capacitação from '../pages/CapacitaçãoPages/Capacitação/Capacitação';
 import Forum from '../pages/ForumPages/Forum';
+import Inicial from '../pages/InicialPages/Inicial/Inicial';
 
 const Drawer = createDrawerNavigator();
 
@@ -18,7 +16,7 @@ export default function DrawerRoutes(){
         <Drawer.Navigator screenOptions={{title: ''}}>
             <Drawer.Screen 
             name='iniciotabroutes'
-            component={TabRoutes}
+            component={Inicial}
             options={{
                 drawerIcon: ({size}) => <Feather name='home' size={size}/>,
                 drawerLabel: 'Inicio'

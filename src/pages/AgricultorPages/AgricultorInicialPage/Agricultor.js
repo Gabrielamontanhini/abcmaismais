@@ -3,6 +3,7 @@ import { TinyHeader } from "../../../components/HeadersComponents/TinyHeader"
 import { OptionsView } from "../../../styles/styledOptions"
 import { StyledSafeArea } from "../../../styles/styledSafeArea"
 import { Card } from "../../../components/CardComponent/Card"
+import Bottom from "../../../components/BottomComponent/bottom"
 
 
 export default function Agricultor({ navigation }) {
@@ -26,7 +27,7 @@ export default function Agricultor({ navigation }) {
 
 
 
-
+        <Bottom navigation={navigation}/>
         </StyledSafeArea>
     )
 }
